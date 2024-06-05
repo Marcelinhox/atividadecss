@@ -7,22 +7,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
- 
 }
+
 .background {
     background-image: url('caminho/para/sua/imagem.jpg');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem */
-    position: absolute; /* Alterado para posição absoluta */
-    top: 0; /* Alinha a parte superior ao topo do elemento pai */
-    left: 0; /* Alinha a parte esquerda ao início do elemento pai */
-    width: 100%; /* Faz a imagem ocupar toda a largura do elemento pai */
-    height: 100%; /* Faz a imagem ocupar toda a altura do elemento pai */
+    position: fixed; /* Alterado para posição fixa */
+    top: 0; /* Alinha a parte superior ao topo da janela de visualização */
+    left: 0; /* Alinha a parte esquerda ao início da janela de visualização */
+    width: 100%; /* Faz a imagem ocupar toda a largura da janela de visualização */
+    height: 100%; /* Faz a imagem ocupar toda a altura da janela de visualização */
+    z-index: -1; /* Define um índice z para a imagem, menor que zero para que o conteúdo fique na frente */
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona transparência ao fundo */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,7 +42,6 @@ button {
     color: white;
 }
 
-
 button:hover {
     background-color: #0056b3;
 }
@@ -49,4 +49,3 @@ button:hover {
 .hidden {
     display: none;
 }
-
