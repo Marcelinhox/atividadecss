@@ -8,7 +8,16 @@ body {
     align-items: center;
     height: 100vh;
 }
-
+.background {
+    background-image: url(971.jpg); /* Caminho para sua imagem de fundo */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
     text-align: center;
     background-color: #fff;
