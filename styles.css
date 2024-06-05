@@ -13,10 +13,12 @@ body {
     background-image: url('caminho/para/sua/imagem.jpg');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem */
-    position: relative; /* Adiciona posição relativa */
-    z-index: -1; /* Define um índice z para a imagem, menor que zero para que o conteúdo fique na frente */
+    position: absolute; /* Alterado para posição absoluta */
+    top: 0; /* Alinha a parte superior ao topo do elemento pai */
+    left: 0; /* Alinha a parte esquerda ao início do elemento pai */
+    width: 100%; /* Faz a imagem ocupar toda a largura do elemento pai */
+    height: 100%; /* Faz a imagem ocupar toda a altura do elemento pai */
 }
-
 
 .container {
     text-align: center;
@@ -24,6 +26,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Adiciona posição relativa */
+    z-index: 1; /* Coloca o conteúdo na frente da imagem de fundo */
 }
 
 button {
