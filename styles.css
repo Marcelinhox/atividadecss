@@ -10,10 +10,13 @@ body {
  
 }
 .background {
-    background-image: url('971.jpg');
+    background-image: url('caminho/para/sua/imagem.jpg');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centraliza a imagem */
+    position: relative; /* Adiciona posição relativa */
+    z-index: -1; /* Define um índice z para a imagem, menor que zero para que o conteúdo fique na frente */
 }
+
 
 .container {
     text-align: center;
